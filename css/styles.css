@@ -1,0 +1,194 @@
+/* === RESET BÁSICO === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffdf00;
+    color: #222;
+}
+
+/* === CABEÇALHO === */
+header {
+    background-color: #009c3b; /* verde brasil */
+    color: white;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-logo h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffdf00; /* amarelo brasil */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* === MAIN === */
+main {
+    max-width: 960px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+    border: 2px solid #009c3b;  
+    border-left: 3px solid #009c3b;  
+}
+
+section h2 {
+    font-size: 1.4rem;
+    color: #009c3b;
+    margin-bottom: 20px;
+}
+
+/* === CARDS DOS JOGADORES === */
+.cards-jogadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 2px solid #009c3b;
+    border-radius: 8px;
+    padding: 16px;
+    width: 160px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: #ddd; /* cor de fundo caso a imagem não carregue */
+}
+
+.card h3 {
+    font-size: 1rem;
+    color: #003087; /* azul brasil */
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 0.85rem;
+    color: #444;
+}
+
+/* === TABELA DE JOGOS === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #009c3b;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* === FORMULÁRIO === */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 480px;
+}
+
+form label {
+    font-weight: bold;
+    color: #003087;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form button {
+    background-color: #ffdf00; /* amarelo */
+    color: #003087; /* azul */
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+form button:hover {
+    background-color: #009c3b; /* muda para verde ao passar o mouse */
+    color: white;
+}
+
+/* === RODAPÉ === */
+footer {
+    background-color: #003087; /* azul brasil */
+    color: white;
+    padding: 20px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 16px;
+}
+
+.redes-sociais a {
+    color: #ffdf00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
